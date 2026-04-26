@@ -64,7 +64,7 @@ The current pipeline structure was kept simple on purpose so that upgrade can be
 
 ## Architecture
 
-Architecture diagram: [docs/architecture-diagram.svg](/home/vishav/projects/talent-scout-ai/docs/architecture-diagram.svg)
+Architecture diagram: [docs/architecture-diagram.svg]
 
 ```mermaid
 flowchart LR
@@ -78,7 +78,7 @@ flowchart LR
     H[Gemini or fallback interest simulator] --> D
 ```
 
-Detailed architecture note: [docs/architecture.md](/home/vishav/projects/talent-scout-ai/docs/architecture.md:1)
+Detailed architecture note: [docs/architecture.md]
 
 ## Scoring
 
@@ -199,20 +199,3 @@ uv run pytest
 ### Vercel
 
 Possible, but this app is better suited to Railway or Render for the current deadline.
-
-## Submission checklist
-
-- deployed app URL
-- public GitHub repo
-- README
-- demo video link
-- sample input and output
-- repo access shared with `hackathon@deccan.ai`
-
-## Suggested demo order
-
-1. Paste the sample JD.
-2. Show the LangGraph flow.
-3. Open the top candidate and explain the match breakdown.
-4. Expand the outreach transcript and explain the interest score.
-5. End on the ranked shortlist and recruiter summary.
