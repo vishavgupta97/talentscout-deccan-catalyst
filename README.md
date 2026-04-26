@@ -49,7 +49,7 @@ Candidate discovery is handled in two steps:
 - a lightweight lexical retrieval pass over the sourced talent pool
 - TF-IDF based semantic similarity between the JD and candidate profile text
 
-This kept the submission simpler to deploy and easier to explain during the demo while still giving a meaningful ranking signal.
+This can be enhanced in future scope of repo.
 
 ## Next iteration
 
