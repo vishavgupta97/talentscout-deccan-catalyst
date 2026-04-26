@@ -35,7 +35,6 @@ This build uses a sourced talent pool stored locally instead of live LinkedIn sc
 
 That choice was deliberate:
 
-- it is more stable for a timed hackathon demo
 - it avoids scraping risk and rate-limit issues
 - it still demonstrates candidate discovery, matching, and ranking clearly
 
