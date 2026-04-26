@@ -1,0 +1,103 @@
+<svg width="1400" height="920" viewBox="0 0 1400 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="920" fill="#F7F3EA"/>
+  <rect x="50" y="40" width="1300" height="840" rx="24" fill="#FFFDF8" stroke="#D7D2C8" stroke-width="2"/>
+  <text x="90" y="95" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">TalentScout Architecture</text>
+  <text x="90" y="128" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="18">Deccan Catalyst submission flow for JD parsing, candidate matching, outreach simulation, and ranking.</text>
+
+  <rect x="90" y="180" width="230" height="92" rx="16" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+  <text x="205" y="218" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Recruiter Input</text>
+  <text x="205" y="247" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="16">JD form or JSON API</text>
+
+  <rect x="380" y="180" width="260" height="92" rx="16" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="510" y="218" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">FastAPI App</text>
+  <text x="510" y="247" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="16">UI render + API endpoints</text>
+
+  <rect x="700" y="160" width="560" height="430" rx="20" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="735" y="202" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">LangGraph Pipeline</text>
+  <text x="735" y="230" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="16">Compiled workflow used by the Deccan talent scouting flow</text>
+
+  <rect x="740" y="270" width="200" height="82" rx="14" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="840" y="305" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">parse_job</text>
+  <text x="840" y="332" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="15">skills, seniority, work mode</text>
+
+  <rect x="980" y="270" width="240" height="82" rx="14" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="1100" y="305" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">retrieve_candidates</text>
+  <text x="1100" y="332" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="15">first-pass lexical filtering</text>
+
+  <rect x="740" y="400" width="220" height="92" rx="14" fill="#CCFBF1" stroke="#0F766E" stroke-width="2"/>
+  <text x="850" y="438" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">rank_candidates</text>
+  <text x="850" y="465" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="15">match + interest + final score</text>
+
+  <rect x="1010" y="400" width="210" height="92" rx="14" fill="#CCFBF1" stroke="#0F766E" stroke-width="2"/>
+  <text x="1115" y="438" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">summarize</text>
+  <text x="1115" y="465" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="15">recruiter-ready summary</text>
+
+  <rect x="130" y="400" width="250" height="120" rx="16" fill="#F1F5F9" stroke="#64748B" stroke-width="2"/>
+  <text x="255" y="438" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Candidate Repository</text>
+  <text x="255" y="468" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="16">SQLite seeded from</text>
+  <text x="255" y="491" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="16">curated JSON talent pool</text>
+
+  <rect x="110" y="610" width="310" height="175" rx="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <text x="265" y="648" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Scoring Engine</text>
+  <text x="150" y="692" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="17">Match Score</text>
+  <text x="150" y="720" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="15">35 skill overlap</text>
+  <text x="150" y="744" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="15">20 experience fit</text>
+  <text x="150" y="768" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="15">15 domain fit</text>
+  <text x="295" y="720" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="15">15 logistics fit</text>
+  <text x="295" y="744" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="15">15 semantic similarity</text>
+
+  <rect x="500" y="610" width="350" height="175" rx="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <text x="675" y="648" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Interest Engine</text>
+  <rect x="530" y="675" width="130" height="74" rx="12" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+  <text x="595" y="708" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Gemini</text>
+  <text x="595" y="731" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="14">live transcript</text>
+  <rect x="690" y="675" width="130" height="74" rx="12" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="755" y="708" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Fallback</text>
+  <text x="755" y="731" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="14">deterministic score</text>
+
+  <rect x="930" y="640" width="300" height="130" rx="16" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="1080" y="680" text-anchor="middle" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Recruiter Output</text>
+  <text x="1080" y="712" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="16">ranked shortlist, reasons,</text>
+  <text x="1080" y="736" text-anchor="middle" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="16">interest transcript, summary</text>
+
+  <line x1="320" y1="226" x2="380" y2="226" stroke="#475569" stroke-width="3"/>
+  <polygon points="380,226 366,218 366,234" fill="#475569"/>
+
+  <line x1="640" y1="226" x2="740" y2="226" stroke="#475569" stroke-width="3"/>
+  <line x1="740" y1="226" x2="740" y2="280" stroke="#475569" stroke-width="3"/>
+  <polygon points="740,280 732,266 748,266" fill="#475569"/>
+
+  <line x1="940" y1="311" x2="980" y2="311" stroke="#475569" stroke-width="3"/>
+  <polygon points="980,311 966,303 966,319" fill="#475569"/>
+
+  <line x1="1100" y1="352" x2="1100" y2="390" stroke="#475569" stroke-width="3"/>
+  <line x1="1100" y1="390" x2="960" y2="390" stroke="#475569" stroke-width="3"/>
+  <line x1="960" y1="390" x2="960" y2="446" stroke="#475569" stroke-width="3"/>
+  <polygon points="960,446 952,432 968,432" fill="#475569"/>
+
+  <line x1="960" y1="446" x2="1010" y2="446" stroke="#475569" stroke-width="3"/>
+  <polygon points="1010,446 996,438 996,454" fill="#475569"/>
+
+  <line x1="380" y1="460" x2="980" y2="460" stroke="#64748B" stroke-width="3" stroke-dasharray="10 8"/>
+  <polygon points="980,460 966,452 966,468" fill="#64748B"/>
+  <text x="635" y="446" text-anchor="middle" fill="#64748B" font-family="Arial, Helvetica, sans-serif" font-size="15">candidate profiles</text>
+
+  <line x1="850" y1="492" x2="850" y2="610" stroke="#0F766E" stroke-width="3"/>
+  <line x1="850" y1="610" x2="420" y2="610" stroke="#0F766E" stroke-width="3"/>
+  <polygon points="420,610 434,602 434,618" fill="#0F766E"/>
+
+  <line x1="960" y1="446" x2="960" y2="610" stroke="#0F766E" stroke-width="3"/>
+  <line x1="960" y1="610" x2="850" y2="610" stroke="#0F766E" stroke-width="3"/>
+  <polygon points="850,610 864,602 864,618" fill="#0F766E"/>
+
+  <line x1="1030" y1="492" x2="1030" y2="640" stroke="#16A34A" stroke-width="3"/>
+  <polygon points="1030,640 1022,626 1038,626" fill="#16A34A"/>
+
+  <line x1="420" y1="698" x2="500" y2="698" stroke="#475569" stroke-width="3"/>
+  <polygon points="500,698 486,690 486,706" fill="#475569"/>
+
+  <line x1="850" y1="698" x2="930" y2="698" stroke="#475569" stroke-width="3"/>
+  <polygon points="930,698 916,690 916,706" fill="#475569"/>
+
+  <text x="90" y="840" fill="#64748B" font-family="Arial, Helvetica, sans-serif" font-size="16">Implementation mapping: FastAPI app in app/app.py, LangGraph pipeline in app/services/pipeline.py, scoring in app/services/scoring.py, interest simulation in app/services/llm.py.</text>
+</svg>

@@ -1,0 +1,27 @@
+[project]
+name = "talent-scout-ai"
+version = "0.1.0"
+description = "Talent scouting and candidate engagement app built for Deccan Catalyst"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.136.1",
+    "google-genai>=1.73.1",
+    "httpx>=0.28.1",
+    "jinja2>=3.1.6",
+    "langchain>=1.2.15",
+    "langgraph>=1.1.9",
+    "pydantic-settings>=2.14.0",
+    "pytest>=9.0.3",
+    "python-multipart>=0.0.26",
+    "scikit-learn>=1.8.0",
+    "uvicorn>=0.46.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
