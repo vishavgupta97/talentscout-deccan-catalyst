@@ -64,7 +64,7 @@ The current pipeline structure was kept simple on purpose so that upgrade can be
 
 ## Architecture
 
-Architecture diagram: [docs/architecture-diagram.svg]
+Architecture diagram:
 
 ```mermaid
 flowchart LR
@@ -78,7 +78,7 @@ flowchart LR
     H[Gemini or fallback interest simulator] --> D
 ```
 
-Detailed architecture note: [docs/architecture.md]
+Detailed architecture note
 
 ## Scoring
 
